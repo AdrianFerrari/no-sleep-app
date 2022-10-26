@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Login from "./login/Login.js"
+import GetStarted from "./get-started/GetStarted.js"
+import Choose from "./choose/Choose.js"
+import Time from "./time/Time.js"
+import React, { useState } from 'react'
 
 function App() {
+  const [index, setIndex] = useState(0)
+  const [pages, setPages] = useState(() => {
+    return (
+      [
+      <Login nextPage={nextPage}/>,
+      <GetStarted nextPage={nextPage}/>,
+      <Choose nextPage={nextPage}/>,
+      <Time setIndex={setIndex}/>
+      ]
+    )
+  })
+
+  function nextPage() {
+    setIndex(prev => prev + 1)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {pages[index]}
     </div>
   );
 }

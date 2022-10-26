@@ -1,0 +1,105 @@
+.time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #E9EFFF;
+    color: #404756;
+    height: 100%;
+    padding: 60px 30px;
+    position: relative;
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 200px;
+    width: 100%;
+    background: #DDE3F2;
+    border-radius: 30px;
+    font-size: 26px;
+    letter-spacing: 10px;
+}
+
+hr {
+    border: 1px solid #555F73;
+    opacity: .5;
+    width: 80%;
+}
+
+.time h1 {
+    font-size: 26px;
+}
+
+.time span {
+    color: #5F6980;
+}
+
+.day-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.day-container > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #404756;
+    font-size: 20px;
+    border: 3px solid #404756;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: relative;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+input[type="checkbox"] {
+    display: none;
+    position: absolute;
+}
+
+input[type="checkbox"]:checked + label {
+    color: #E9EFFF;
+    background: #404756;
+}
+
+.time button {
+    display: flex;
+    justify-content: center;
+    font-family: "Syne", sans-serif;
+    cursor: pointer;
+    padding: 16px 70px;
+    border: none;
+    font-size: 17px;
+}
+
+.save-btn {
+    color:#E9EFFF;
+    background: #404756;
+    margin-bottom: -40px;
+}
+
+.save-btn:active {
+    color: #404756;
+    background: #E9EFFF;
+}
+
+.skip-btn {
+    color:#404756;
+    background: #E9EFFF;
+}
+
+.skip-btn:active {
+    color: #E9EFFF;
+    background: #404756;
+}

@@ -1,0 +1,96 @@
+@keyframes onLoad {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #E9EFFF url("./images/background-login.png") no-repeat;
+    color: #404756;
+    margin: auto;
+    position: relative;
+    animation: onLoad ease-out 1s 0s 1;
+    height: 100%;
+    position: relative;
+}
+
+.login h1 {
+    top: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #E9EFFF;
+    margin-top: 20px;
+}
+
+.login h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.login button {
+    font-family: "Syne", sans-serif;
+    color: #404756;
+    cursor: pointer;
+}
+
+.nosleep-logo {
+    margin-bottom: 100px;
+}
+
+.img-sitting {
+    width: 191px;
+    height: 278px;
+    top:309px;
+}
+
+.nosleep-logo {
+    width: 58.32px;
+    height: 54px;
+}
+
+.google-btn {
+    padding: 16px 18px 16px 55px;
+    background: #E9EFFF url("./images/icon-google.png") no-repeat 18px 12px;
+    color:#404756;
+    font-size: 14px;
+    border-radius: 14px;
+    box-shadow: 2px 2px 4px #404756;
+    border: 1px solid #404756;
+}
+
+.google-btn:active {
+    color: white;
+    background: #404756 url("./images/icon-google2.png") no-repeat 18px 12px;
+}
+
+.mail-btn {
+    padding: 5px 5px 5px 31px;
+    background: #E9EFFF url("./images/icon-mail.png") no-repeat 5px 3px;
+    border: none;
+    font-size: 11px;
+    margin-bottom: 94px;
+    border-radius: 14px;
+}
+
+.mail-btn:active {
+    color: white;
+    background: #404756 url("./images/icon-mail2.png") no-repeat 5px 3px;
+}
+
+
+
+@keyframes start {
+    0%    { opacity: 0; }
+    20%   { opacity: 1; }
+    80%   { opacity: 0; }
+    100%  { opacity: 1; }
+}

@@ -1,0 +1,56 @@
+.get-started {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #56669D url("./images/background-circles.png") no-repeat 0px 295px;
+    height: 100%;
+    position: relative;
+}
+
+.get-started h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFCD93;
+    letter-spacing: 0.145em;
+    margin-top: 30px;
+}
+
+.get-started h3 {
+    font-weight: 400;
+    font-size: 28px;
+    color: #FFCD93;
+    letter-spacing: 0.145em;
+}
+
+.get-started p {
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+}
+
+.sitting-img {
+    margin-top: 150px;
+}
+
+.get-started-btn {
+    margin-top: 100px;
+    width: 198px;
+    height: 49px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Syne", sans-serif;
+    color: #404756;
+    cursor: pointer;
+    border: 5px solid #FFCD93;
+    box-shadow: 2px 5px 5px #404756;
+    border-radius: 14px;
+    padding: 12px 52px 16px 52px;
+    background: #FFCD93 url("./images/arrow-left.png") no-repeat 165px 12px;
+    
+}
+
+.get-started-btn:active {
+    color: #FFCD93;
+    background: #404756 url("./images/arrow-left2.png") no-repeat 165px 12px;
+    border: 5px solid #404756;
+}

@@ -1,0 +1,57 @@
+.choose {
+    background: #F2C4C2 url("./images/background.png") no-repeat;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.choose::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+.container-header {
+    margin-bottom: 45px;
+    align-self: flex-start;
+}
+
+.container-options {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 35px;
+    width: 345px;
+    height: 1000px;
+    align-items: flex-start;
+}
+
+.choose h1 {
+    color: #56669D;
+    font-size: 26px;
+    line-height: 31.2px;
+    font-weight: 400;
+}
+
+.choose h2 {
+    color: #727E99;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.choose-class {
+    padding: 0px;
+    margin: 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.choose-class:active {
+    filter: brightness(130%)
+}
